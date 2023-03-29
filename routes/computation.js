@@ -8,13 +8,13 @@ var router = express.Router();
 
 router.get('/', function(req, res, next) {
 
-    var a1=(Math.random())
+    var a1=Math.floor((Math.random())*100)
 
-    var a2=(Math.random())
+    var a2=Math.floor((Math.random())*100)
 
-    var a3=(Math.random())
+    var a3=Math.random()
 
-    var a4=(Math.random())
+    var a4=Math.floor((Math.random())*100)
 
     var coshFunction=Math.acosh(a1)
 
@@ -22,7 +22,7 @@ router.get('/', function(req, res, next) {
 
     var tanFunction=Math.tan(a3)
 
-    var srtFunction=Math.sqrt(a4)
+    var sqrtFunction=Math.sqrt(a4)
 
 
 
@@ -46,7 +46,7 @@ router.get('/', function(req, res, next) {
 
         t:tanFunction,
 
-        s:srtFunction,
+        s:sqrtFunction,
 
 
 
